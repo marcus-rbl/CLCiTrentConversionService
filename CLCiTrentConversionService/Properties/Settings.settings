@@ -1,0 +1,9 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="CLCiTrentConversionService.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="CLCiTrentConversionService_com_webitrent_ce0286de_ETADM086SSService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://ce0286de.webitrent.com/ce0286de_web/srd/ETADM086SS</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="urn:uniface:applic:wrapped:services:ETADM086SS" name="ETADM086SS" targetNamespace="urn:uniface:applic:wrapped:services:ETADM086SS" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema elementFormDefault="qualified" targetNamespace="urn:uniface:applic:wrapped:services:ETADM086SS">
+      <xsd:element name="ACCEPT">
+        <xsd:complexType>
+          <xsd:sequence />
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="CHK_CONV_NEW">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="P_QUEUE_ID" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="CHK_CONV_STATUS">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="P_QUEUE_ID" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="EXEC">
+        <xsd:complexType>
+          <xsd:sequence />
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="QUIT">
+        <xsd:complexType>
+          <xsd:sequence />
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="RUN_CONV">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="P_CONV_TYPE" nillable="true" type="xsd:string" />
+            <xsd:element name="P_CONV_DIR" nillable="true" type="xsd:string" />
+            <xsd:element name="P_CONV_FILE" nillable="true" type="xsd:string" />
+            <xsd:element name="P_PEOPLE_ID" nillable="true" type="xsd:string" />
+            <xsd:element name="P_FS" nillable="true" type="xsd:string" />
+            <xsd:element name="P_ORG_NAME" nillable="true" type="xsd:string" />
+            <xsd:element name="P_USER_NM" nillable="true" type="xsd:string" />
+            <xsd:element name="P_USER_PWD" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="RUN_CONV_NEW">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="P_CONV_TYPE" nillable="true" type="xsd:string" />
+            <xsd:element name="P_CONV_DIR" nillable="true" type="xsd:string" />
+            <xsd:element name="P_CONV_FILE" nillable="true" type="xsd:string" />
+            <xsd:element name="P_PEOPLE_ID" nillable="true" type="xsd:string" />
+            <xsd:element name="P_FS" nillable="true" type="xsd:string" />
+            <xsd:element name="P_ORG_NAME" nillable="true" type="xsd:string" />
+            <xsd:element name="P_USER_NM" nillable="true" type="xsd:string" />
+            <xsd:element name="P_USER_PWD" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="ACCEPTResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="return" type="xsd:int" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="CHK_CONV_NEWResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="return" type="xsd:int" />
+            <xsd:element name="P_STATUS" nillable="true" type="xsd:string" />
+            <xsd:element name="P_LOG_FILE_DATA" nillable="true" type="xsd:string" />
+            <xsd:element name="P_EXC_FILE_DATA" nillable="true" type="xsd:string" />
+            <xsd:element name="P_SUC_FILE_DATA" nillable="true" type="xsd:string" />
+            <xsd:element name="P_ERROR_MSG" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="CHK_CONV_STATUSResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="return" type="xsd:int" />
+            <xsd:element name="P_STATUS" nillable="true" type="xsd:string" />
+            <xsd:element name="P_ERROR_MSG" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="EXECResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="return" type="xsd:int" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="QUITResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="return" type="xsd:int" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="RUN_CONVResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="return" type="xsd:int" />
+            <xsd:element name="P_LOG_FILE" nillable="true" type="xsd:string" />
+            <xsd:element name="P_EXC_FILE" nillable="true" type="xsd:string" />
+            <xsd:element name="P_SUC_FILE" nillable="true" type="xsd:string" />
+            <xsd:element name="P_QUEUE_ID" nillable="true" type="xsd:string" />
+            <xsd:element name="P_ERROR_MSG" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="RUN_CONV_NEWResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="return" type="xsd:int" />
+            <xsd:element name="P_LOG_FILE" nillable="true" type="xsd:string" />
+            <xsd:element name="P_EXC_FILE" nillable="true" type="xsd:string" />
+            <xsd:element name="P_SUC_FILE" nillable="true" type="xsd:string" />
+            <xsd:element name="P_QUEUE_ID" nillable="true" type="xsd:string" />
+            <xsd:element name="P_ERROR_MSG" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+  </types>
+  <message name="ACCEPTRequest">
+    <part name="parameters" element="tns:ACCEPT" />
+  </message>
+  <message name="CHK_CONV_NEWRequest">
+    <part name="parameters" element="tns:CHK_CONV_NEW" />
+  </message>
+  <message name="CHK_CONV_STATUSRequest">
+    <part name="parameters" element="tns:CHK_CONV_STATUS" />
+  </message>
+  <message name="EXECRequest">
+    <part name="parameters" element="tns:EXEC" />
+  </message>
+  <message name="QUITRequest">
+    <part name="parameters" element="tns:QUIT" />
+  </message>
+  <message name="RUN_CONVRequest">
+    <part name="parameters" element="tns:RUN_CONV" />
+  </message>
+  <message name="RUN_CONV_NEWRequest">
+    <part name="parameters" element="tns:RUN_CONV_NEW" />
+  </message>
+  <message name="ACCEPTResponse">
+    <part name="parameters" element="tns:ACCEPTResponse" />
+  </message>
+  <message name="CHK_CONV_NEWResponse">
+    <part name="parameters" element="tns:CHK_CONV_NEWResponse" />
+  </message>
+  <message name="CHK_CONV_STATUSResponse">
+    <part name="parameters" element="tns:CHK_CONV_STATUSResponse" />
+  </message>
+  <message name="EXECResponse">
+    <part name="parameters" element="tns:EXECResponse" />
+  </message>
+  <message name="QUITResponse">
+    <part name="parameters" element="tns:QUITResponse" />
+  </message>
+  <message name="RUN_CONVResponse">
+    <part name="parameters" element="tns:RUN_CONVResponse" />
+  </message>
+  <message name="RUN_CONV_NEWResponse">
+    <part name="parameters" element="tns:RUN_CONV_NEWResponse" />
+  </message>
+  <portType name="ETADM086SSPortType">
+    <operation name="ACCEPT">
+      <input message="tns:ACCEPTRequest" />
+      <output message="tns:ACCEPTResponse" />
+    </operation>
+    <operation name="CHK_CONV_NEW">
+      <input message="tns:CHK_CONV_NEWRequest" />
+      <output message="tns:CHK_CONV_NEWResponse" />
+    </operation>
+    <operation name="CHK_CONV_STATUS">
+      <input message="tns:CHK_CONV_STATUSRequest" />
+      <output message="tns:CHK_CONV_STATUSResponse" />
+    </operation>
+    <operation name="EXEC">
+      <input message="tns:EXECRequest" />
+      <output message="tns:EXECResponse" />
+    </operation>
+    <operation name="QUIT">
+      <input message="tns:QUITRequest" />
+      <output message="tns:QUITResponse" />
+    </operation>
+    <operation name="RUN_CONV">
+      <input message="tns:RUN_CONVRequest" />
+      <output message="tns:RUN_CONVResponse" />
+    </operation>
+    <operation name="RUN_CONV_NEW">
+      <input message="tns:RUN_CONV_NEWRequest" />
+      <output message="tns:RUN_CONV_NEWResponse" />
+    </operation>
+  </portType>
+  <binding name="ETADM086SSBinding" type="tns:ETADM086SSPortType">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="ACCEPT">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="CHK_CONV_NEW">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="CHK_CONV_STATUS">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="EXEC">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="QUIT">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="RUN_CONV">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="RUN_CONV_NEW">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="ETADM086SSService">
+    <port name="ETADM086SS" binding="tns:ETADM086SSBinding">
+      <soap:address location="https://ce0286de.webitrent.com/ce0286de_web/srd/ETADM086SS" />
+    </port>
+  </service>
+</definitions>
